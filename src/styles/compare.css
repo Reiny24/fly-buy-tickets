@@ -1,0 +1,72 @@
+.compare {
+    grid-column: 2 / 2;
+    display: grid;
+    margin: 30px;
+}
+
+.compare-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.compare-flight {
+    margin: 5px 0 5px 0;
+    background-color: #CEBA9F;
+    border: solid gray 5px;
+    border-radius: 25px;
+    padding: 30px 30px 0 30px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+@media screen and (max-width: 1200px) {
+    .compare-flight {
+        grid-template-columns: 100%;
+    }
+}
+
+.flight-info {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.compare-flight h1 {
+    margin: 10px 0 5px 10px;
+}
+
+.compare-flight h2 {
+    margin: 5px 0 5px 0;
+    padding: 10px;
+}
+
+.buy-ticket {
+    max-width: 200px;
+    max-height: 100px;
+    justify-self: center;
+    align-self: center;
+
+    width: 250px;
+    height: 75px;
+    background-color: #FF9400;
+    border: solid white 5px;
+    border-radius: 24px;
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+    text-align: center;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    margin: 0 0 20px 0;
+}
+
+.buy-ticket:hover {
+    background-color: white;
+    border-color: #FF9400;
+    color: #FF9400;
+    cursor: pointer;
+}

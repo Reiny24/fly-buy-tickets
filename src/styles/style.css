@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.App {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr;
+    grid-template-columns: 120px 1fr;
+}
+
+.main {
+    grid-column: 2 / 2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.background1 {
+    background-image: url('/public/images/background.png');
+    padding-left: 30px;
+}
+
+.background2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/images/background2.png');
+}
+
+.background3 {
+    background-image: url('/public/images/background3.png');
+    padding-top: 30px;
+}
+
+.background4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/public/images/background4.png');
+    padding: 20px 80px;
+}

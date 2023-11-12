@@ -1,0 +1,234 @@
+.places {
+    display: grid;
+    justify-items: center;
+    padding-left: 30px;
+}
+
+.places-title {
+    background: rgba(255, 148, 0, 0.70);
+    margin: 0;
+    width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+.places-flight {
+    justify-self: stretch;
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+.places-flight h2 {
+    background: rgba(255, 148, 0, 0.60);
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.places-box {
+    display: grid;
+    margin: 30px 0;
+    background-color: rgba(114, 111, 106, 0.70);
+}
+
+.places-box h2 {
+    text-align: center;
+}
+
+.schema {
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 10px 0;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.schema p {
+    font-size: 24px;
+    padding: 0px 20px;
+    margin: 0;
+}
+
+.rotate-image {
+    transform: rotate(180deg);
+}
+
+.schema-places {
+    grid-column: 2 / 9;
+
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.schema-places img {
+    width: 50px;
+    padding: 0 6px;
+}
+
+.free-place {
+    background-color: #C08A22;
+    margin: 0 6px;
+    border: solid 3px;
+    border-radius: 15px 15px 0 0;
+    max-width: 50px;
+    height: 44px;
+    transition: border 0.3s, background-color 0.3s;
+}
+
+.free-place:hover {
+    border: solid 3px white;
+    background-color: #79D900;
+}
+
+.free-place:active {
+    background-size: cover;
+    background-image: url('/public/images/schema/selected.png');
+}
+
+.cart-box {
+    grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+    .cart-box {
+        grid-column: auto;
+    }
+}
+
+.seat-info {
+    background: rgba(217, 200, 177, 0.7);
+    border: solid 8px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.seat-info img {
+    width: 60px;
+    align-self: center;
+    grid-row: span 3;
+}
+
+.seat-info h3 {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.seat-info h4 {
+    padding: 0 10px;
+}
+
+.free-seat-info {
+    display: grid;
+    grid-template-columns: 15% 55% 30%;
+}
+
+.free-seat-info h3 {
+    grid-column: span 2;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.free-seat-info h4 {
+    grid-row: span 2;
+    padding: 0 10px;
+}
+
+.price {
+    font-size: 20px;
+    margin: 0
+}
+
+.blocked-seat-info {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.selected-seat-info {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.baggage-info {
+    display: grid;
+    justify-items: center;
+
+    background: rgba(217, 200, 177, 0.7);
+    border: solid 8px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    
+    margin: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 110px;
+}
+
+.baggage-info h2 {
+    grid-column: span 3;
+}
+
+.baggage-info p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.baggage-price {
+    grid-column: span 3;
+    justify-self: end;
+    padding-right: 30px;
+}
+
+.baggage-info img:hover {
+    border: solid 3px rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 80px 100px 1fr 1fr;
+    align-items: center;
+    background: rgb(51, 54, 63);
+    padding: 20px;
+    
+    color: white;
+    font-size: 20px;
+}
+
+.cart-box p {
+    justify-self: end;
+    padding-right: 20px;
+}
+
+.add-to-cart {
+    width: 250px;
+    height: 75px;
+    background-color: #FF9400;
+    border: solid white 5px;
+    border-radius: 24px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    justify-self: end;
+    text-align: center;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.add-to-cart h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: white;
+    border-color: #FF9400;
+    color: #FF9400;
+    cursor: pointer;
+}

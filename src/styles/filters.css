@@ -1,0 +1,116 @@
+.filters {
+    display: grid;
+    margin: 70px;
+    background-color: rgba(133, 133, 133, 0.7);
+    border-radius: 35px;
+    padding: 80px 20px 20px 20px;
+    grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+.filters-title {
+    display: flex;
+    grid-column: span 2;
+    text-align: center;
+    justify-self: center;
+    align-self:end;
+    font-size: 65px;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.compare-button {
+    grid-column: span 2;
+    width: 250px;
+    height: 75px;
+    background-color: #FF9400;
+    border: solid white 5px;
+    border-radius: 24px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+    text-align: center;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.compare-button h2 {
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+
+.compare-button:hover {
+    background-color: white;
+    border-color: #FF9400;
+    color: #FF9400;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .filters-title {
+        grid-column: auto;
+    }
+
+    .compare-button {
+        grid-column: auto;
+    }
+}
+
+.filters-box {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: white;
+    min-width: 380px;
+    max-width: 800px;
+    margin: 3px;
+    padding: 20px;
+    justify-self: center;
+}
+
+.filters-box h2 {
+    color: black;
+    width: 170px;
+}
+
+.filters-input {
+    border: none;
+    font-size: 20px;
+    text-align: end;
+}
+
+.filters-direction {
+    display: grid;
+    grid-template-columns: 200px 60px;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.filters-direction label {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.filters-direction img {
+    justify-self: end;
+}
+
+.filters-direction input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    justify-self: start;
+    
+}
+
+.filters-box1 {
+    border-radius: 25px 0 0 0;
+}
+
+.filters-box6 {
+    border-radius: 0 0 25px 0;
+}

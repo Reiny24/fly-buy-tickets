@@ -1,0 +1,155 @@
+.pay {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 310px;
+}
+
+.pay h1 {
+    grid-column: span 2;
+    color: white;
+    justify-self: start;
+    margin: 10px 0 0 0;
+}
+
+.pay h2 {
+    margin: 0;
+}
+
+.pay-data {
+    position: fixed;
+    display: grid;
+    column-gap: 20px;
+    right: 2.5%;
+    color: white;
+    align-items: center;
+    padding-bottom: 20px;
+    top: 7%
+}
+
+.pay-data img {
+    max-width: 200px;
+    padding: 10px 30px 10px 10px;
+    justify-self: end;
+}
+
+.pay-data p {
+    margin: 0;
+    padding: 5px;
+}
+
+.tickets-list {
+    background: #EBC99A;
+    grid-column: 1 / 1;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px 10px;
+    width: 700px;
+}
+
+.tickets-list img {
+    position: absolute;
+    align-self: end;
+    justify-self: end;
+}
+
+.pay-info {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: rgba(217, 200, 177, 0.7);
+    border: solid 8px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 0 20px;
+    margin: 3px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 50px;
+    height: 170px;
+}
+
+.pay-info p {
+    grid-column: span 2;
+}
+
+.pay-info input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    justify-self: end;
+}
+
+.change-method {
+    justify-self: start;
+}
+
+.pay-method {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: rgba(217, 200, 177, 0.7);
+    border: solid 8px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 0 20px;
+    margin: 3px 0;
+    grid-template-columns: 20px 1fr;
+}
+
+.pay-button {
+    max-width: 200px;
+    max-height: 100px;
+
+    width: 200px;
+    height: 50px;
+    background-color: #FF9400;
+    border: solid white 5px;
+    border-radius: 24px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    justify-self: center;
+
+    /* margin: 0 0 20px 0; */
+}
+
+.pay-button p {
+    margin: 0;
+    padding: 10px;
+}
+
+.pay-button:hover {
+    background-color: white;
+    border-color: #FF9400;
+    color: #FF9400;
+    cursor: pointer;
+}
+
+.confirmation {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .pay {
+        grid-template-columns: auto;
+    }
+    .pay h1 {
+        grid-column: auto;
+    }
+
+    .pay-data {
+        position: relative;
+        right: 0%;
+        top: 0%;
+        grid-template-columns: 300px 300px;
+    }
+
+    .pay-data h2 {
+        grid-row: 1 / 2;
+    }
+}

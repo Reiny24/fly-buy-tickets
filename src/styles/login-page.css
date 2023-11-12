@@ -1,0 +1,33 @@
+.login-page {
+    margin: 40px;
+    padding: 20px;
+    background-color: rgba(213, 187, 166, 0.80);
+    border-radius: 35px;
+    width: 700px;
+    display: grid;
+    justify-items: center;
+}
+
+.login-button {
+    width: 350px;
+    height: 75px;
+    background-color: #FF9400;
+    border: solid white 5px;
+    border-radius: 24px;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    justify-self: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+}
+
+.login-page input {
+    margin: 5px;
+    height: 40px;
+    width: 300px;
+    font-size: 35px;
+    padding: 20px;
+}

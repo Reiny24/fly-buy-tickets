@@ -1,0 +1,50 @@
+.sales {
+    margin: 20px;
+    padding: 20px;
+}
+
+.sales-title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    align-self: end;
+    text-align: end;
+}
+
+.sales-box {
+    background-color: gray;
+    margin: 5px;
+    border-radius: 35px;
+    display: grid;
+    grid-template-rows: 5fr 1fr 25fr;
+    grid-template-columns: 1fr 6fr;
+    max-height: 228px;
+    min-width: 690px;
+}
+
+.sales-box img {
+    max-height: 400px;
+    justify-self: stretch;
+    border-radius: 35px 0 0 35px;
+    grid-row: span 3;
+    max-height: 300px;
+}
+
+.sales-box hr {
+    border: none;
+    border-top: 1px solid white; 
+    margin: 0;
+}
+
+.sales-box p {
+    color: white;
+    padding: 20px;
+    margin: 0;
+    max-height: 160px;
+    text-align: justify;
+}
+
+.sales-sub-title {
+    font-weight: bold;
+    font-size: 24px;
+}
