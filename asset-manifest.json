@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/fly-buy-tickets/static/css/main.57f732e7.css",
-    "main.js": "/fly-buy-tickets/static/js/main.ff7c5376.js",
+    "main.js": "/fly-buy-tickets/static/js/main.b8c5f659.js",
     "static/media/background3.png": "/fly-buy-tickets/static/media/background3.7aa570a7e7c993c0a22c.png",
     "static/media/background.png": "/fly-buy-tickets/static/media/background.de065473da60a5abc3cc.png",
     "static/media/background2.png": "/fly-buy-tickets/static/media/background2.f42fe532819ebf79336d.png",
     "static/media/background4.png": "/fly-buy-tickets/static/media/background4.95db6bb094ecef8583f7.png",
     "index.html": "/fly-buy-tickets/index.html",
     "main.57f732e7.css.map": "/fly-buy-tickets/static/css/main.57f732e7.css.map",
-    "main.ff7c5376.js.map": "/fly-buy-tickets/static/js/main.ff7c5376.js.map"
+    "main.b8c5f659.js.map": "/fly-buy-tickets/static/js/main.b8c5f659.js.map"
   },
   "entrypoints": [
     "static/css/main.57f732e7.css",
-    "static/js/main.ff7c5376.js"
+    "static/js/main.b8c5f659.js"
   ]
 }
