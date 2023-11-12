@@ -14,7 +14,7 @@ const Filters = () => {
 
             <div className="filters-direction">
                 <label htmlFor="option1">
-                    <img src="/images/filters/Arrow.png" alt="One direction" />
+                    <img src="/fly-buy-tickets/images/filters/Arrow.png" alt="One direction" />
                     <h2>В один бік</h2>
                 </label>
                 <input type="radio" id="option1" name="options" value="option1" />
@@ -22,7 +22,7 @@ const Filters = () => {
 
             <div className="filters-direction">
                 <label htmlFor="option2">
-                    <img src="/images/filters/Arrows.png" alt="Two directions" />
+                    <img src="/fly-buy-tickets/images/filters/Arrows.png" alt="Two directions" />
                     <h2>У два боки</h2>
                 </label>
                 <input type="radio" id="option2" name="options" value="option2" />

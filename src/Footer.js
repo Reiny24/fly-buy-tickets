@@ -20,15 +20,15 @@ const Footer = () => {
                     Соціальні мережі:
                 </p>
                 <a href='https://web.telegram.org'>
-                    <img src="/images/footer/telegram.png" alt="Our telegram" />
+                    <img src="/fly-buy-tickets/images/footer/telegram.png" alt="Our telegram" />
                 </a>
 
                 <a href="https://www.viber.com/en/">
-                    <img src="/images/footer/viber.png" alt="Our instagram" />
+                    <img src="/fly-buy-tickets/images/footer/viber.png" alt="Our instagram" />
                 </a>
 
                 <a href="https://www.instagram.com">
-                    <img src="/images/footer/instagram.png" alt="Our instagram" />
+                    <img src="/fly-buy-tickets/images/footer/instagram.png" alt="Our instagram" />
                 </a>
             </div>
 

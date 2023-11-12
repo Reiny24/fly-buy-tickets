@@ -35,7 +35,7 @@ const Pay = () => {
                     <h2>Ціна:</h2>
                     <h2>{flight.price} грн</h2>
 
-                    <img src="/images/pay/trash.png" alt="Видалити квиток" />
+                    <img src="/fly-buy-tickets/images/pay/trash.png" alt="Видалити квиток" />
                 </div>
             ))}
 
@@ -44,16 +44,16 @@ const Pay = () => {
                 <div className='pay-info'>
                     <p>Божик Назар Володимирович</p>
                     <p>+380930029114</p>
-                    <img src="/images/filters/Arrows.png" alt="Змінити дані" />
+                    <img src="/fly-buy-tickets/images/filters/Arrows.png" alt="Змінити дані" />
                     <Link className='change-method'>Змінити дані</Link>
                 </div>
 
                 <h2>Метод оплати:</h2>
                 <div className='pay-method'>
                     <input type="radio" />
-                    <img src="/images/pay/mastercard-visa.png" alt="MasterCard Visa" />
+                    <img src="/fly-buy-tickets/images/pay/mastercard-visa.png" alt="MasterCard Visa" />
                     <input type="radio" />
-                    <img src="/images/pay/g-apple-pay.png" alt="G-Pay Apple-Pay" />
+                    <img src="/fly-buy-tickets/images/pay/g-apple-pay.png" alt="G-Pay Apple-Pay" />
                 </div>
 
                 <div className='confirmation'>
@@ -61,7 +61,7 @@ const Pay = () => {
                     <p>Надаю дозвіл на обробку моїх даних</p>
                 </div>
                 
-                <Link to='' className='pay-button'><p>Оплатити</p></Link>
+                <Link to='/fly-buy-tickets' className='pay-button'><p>Оплатити</p></Link>
             </div>
 
 

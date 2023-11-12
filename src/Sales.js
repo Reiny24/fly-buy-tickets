@@ -6,7 +6,7 @@ const Sales = () => {
             <p className="sales-title">Акції та знижки</p>
 
             <div className="sales-box">
-                <img src="/images/sales/family.png" alt="Сім'я, подорожуйте дешевше з сім'єю" />
+                <img src="/fly-buy-tickets/images/sales/family.png" alt="Сім'я, подорожуйте дешевше з сім'єю" />
                 <p className="sales-sub-title">Родинний тур</p>
                 <hr />
                 <p>
@@ -17,7 +17,7 @@ const Sales = () => {
             </div>
 
             <div className="sales-box">
-                <img src="/images/sales/leaves.png" alt="Осінь, осінні розпродажі" />
+                <img src="/fly-buy-tickets/images/sales/leaves.png" alt="Осінь, осінні розпродажі" />
                 <p className="sales-sub-title">Осінні розпродажі</p>
                 <hr />
                 <p>
@@ -29,7 +29,7 @@ const Sales = () => {
             </div>
 
             <div className="sales-box">
-                <img src="/images/sales/handshake.png" alt="Співпраця" />
+                <img src="/fly-buy-tickets/images/sales/handshake.png" alt="Співпраця" />
                 <p className="sales-sub-title">Зареєструйтеся і зекономте</p>
                 <hr />
                 <p>

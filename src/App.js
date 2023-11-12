@@ -20,7 +20,7 @@ function App() {
             <Sidebar></Sidebar>
 
             <Switch>
-                <Route exact path='/'>
+                <Route exact path='/fly-buy-tickets'>
                     <div className='main background1'>
                         <Filters></Filters>
                         <Info></Info>

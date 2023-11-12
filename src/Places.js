@@ -34,7 +34,7 @@ const Places = () => {
             </div>
             <div className="places-box">
                 <div className="schema">
-                    <img src="/images/schema/exit.png" alt="Вхід/вихід" />
+                    <img src="/fly-buy-tickets/images/schema/exit.png" alt="Вхід/вихід" />
                     <p>A</p>
                     <p>B</p>
                     <p>C</p>
@@ -42,12 +42,12 @@ const Places = () => {
                     <p>D</p>
                     <p>E</p>
                     <p>F</p>
-                    <img src="/images/schema/exit.png" alt="Вхід/вихід" className='rotate-image' />
+                    <img src="/fly-buy-tickets/images/schema/exit.png" alt="Вхід/вихід" className='rotate-image' />
 
                     <div className='schema-places'>
                         {places.map((place) => (
                             <div key={place.id}>
-                                {place.seat === 0 && <img src='/images/schema/blocked-seat.png' alt='Вільне місце'></img>}
+                                {place.seat === 0 && <img src='/fly-buy-tickets/images/schema/blocked-seat.png' alt='Вільне місце'></img>}
                                 {place.seat === 1 && <div className="free-place"></div>}
                                 {place.seat === 2 && <p></p>}
                             </div>
@@ -59,7 +59,7 @@ const Places = () => {
                     <h2>Інформація про місця</h2>
                     <div className="seat-info">
                         <div className="free-seat-info">
-                            <img src="/images/schema/free-seat.png" alt="" />
+                            <img src="/fly-buy-tickets/images/schema/free-seat.png" alt="" />
                             <h3>Доступно</h3>
                             <h4>Надається базовий рівень обслуговування.</h4>
                             <p className='price'>{flightData.price} грн (UAH)</p>
@@ -69,7 +69,7 @@ const Places = () => {
                         <hr />
 
                         <div className="blocked-seat-info">
-                            <img src="/images/schema/blocked-seat.png" alt="" />
+                            <img src="/fly-buy-tickets/images/schema/blocked-seat.png" alt="" />
                             <h3>Зарезервоване місце</h3>
                             <h4>Місце може бути вже зайняте або недоступне для покупки</h4>
                         </div>
@@ -77,7 +77,7 @@ const Places = () => {
                         <hr />
 
                         <div className="selected-seat-info">
-                            <img src="/images/schema/selected-seat.png" alt="" />
+                            <img src="/fly-buy-tickets/images/schema/selected-seat.png" alt="" />
                             <h3>Вибране місце</h3>
                         </div>
                     </div>
@@ -85,11 +85,11 @@ const Places = () => {
                     <div className="baggage-info">
                         <h2>Інформація про багаж</h2>
                         
-                        <img src="/images/schema/7kg.png" alt="7 кг багажу" />
+                        <img src="/fly-buy-tickets/images/schema/7kg.png" alt="7 кг багажу" />
                         
-                        <img src="/images/schema/20kg.png" alt="20 кг багажу" />
+                        <img src="/fly-buy-tickets/images/schema/20kg.png" alt="20 кг багажу" />
                         
-                        <img src="/images/schema/32kg.png" alt="32 кг багажу" />
+                        <img src="/fly-buy-tickets/images/schema/32kg.png" alt="32 кг багажу" />
                         <p>7 кг</p>
                         <p>20 кг</p>
                         <p>32 кг</p>
@@ -99,7 +99,7 @@ const Places = () => {
                 </div>
 
                 <div className="cart-box">
-                    <img src="/images/schema/cart.png" alt="Кошик" />
+                    <img src="/fly-buy-tickets/images/schema/cart.png" alt="Кошик" />
                     <p>Кошик: <br />0 грн</p>
                     <p>Ціна: 800 грн (UAH)</p>
                     <Link to='/pay' className="add-to-cart"><h2>Додати в<br />кошик</h2></Link>
