@@ -1,17 +1,13 @@
 {
   "files": {
-    "main.css": "/fly-buy-tickets/static/css/main.119aa244.css",
-    "main.js": "/fly-buy-tickets/static/js/main.b5344567.js",
-    "static/media/background4.png": "/fly-buy-tickets/static/media/background4.88fc4cabdfb1d347d29d.png",
-    "static/media/background3.png": "/fly-buy-tickets/static/media/background3.7aa570a7e7c993c0a22c.png",
-    "static/media/background.png": "/fly-buy-tickets/static/media/background.de065473da60a5abc3cc.png",
-    "static/media/background2.png": "/fly-buy-tickets/static/media/background2.f42fe532819ebf79336d.png",
+    "main.css": "/fly-buy-tickets/static/css/main.f0d65313.css",
+    "main.js": "/fly-buy-tickets/static/js/main.a18893c2.js",
     "index.html": "/fly-buy-tickets/index.html",
-    "main.119aa244.css.map": "/fly-buy-tickets/static/css/main.119aa244.css.map",
-    "main.b5344567.js.map": "/fly-buy-tickets/static/js/main.b5344567.js.map"
+    "main.f0d65313.css.map": "/fly-buy-tickets/static/css/main.f0d65313.css.map",
+    "main.a18893c2.js.map": "/fly-buy-tickets/static/js/main.a18893c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.119aa244.css",
-    "static/js/main.b5344567.js"
+    "static/css/main.f0d65313.css",
+    "static/js/main.a18893c2.js"
   ]
 }
