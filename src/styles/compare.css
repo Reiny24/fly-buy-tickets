@@ -12,19 +12,13 @@
 }
 
 .compare-flight {
-    margin: 5px 0 5px 0;
+    margin: 20px 0;
     background-color: #CEBA9F;
     border: solid gray 5px;
     border-radius: 25px;
     padding: 30px 30px 0 30px;
     display: grid;
     grid-template-columns: 80% 20%;
-}
-
-@media screen and (max-width: 1200px) {
-    .compare-flight {
-        grid-template-columns: 100%;
-    }
 }
 
 .flight-info {
@@ -34,6 +28,9 @@
 
 .compare-flight h1 {
     margin: 10px 0 5px 10px;
+    font-size: 38px;
+    color: white;
+    text-decoration: underline;
 }
 
 .compare-flight h2 {
@@ -69,4 +66,10 @@
     border-color: #FF9400;
     color: #FF9400;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .compare-flight {
+        grid-template-columns: 100%;
+    }
 }

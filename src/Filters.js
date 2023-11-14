@@ -40,7 +40,7 @@ const Filters = () => {
 
     return ( 
         <div className="item filters">
-            <h1 className="filters-title">Авіаквитки по всьому світу</h1>
+            <h1>Авіаквитки по всьому світу</h1>
 
             <div className="filters-direction">
                 <label htmlFor="option1">

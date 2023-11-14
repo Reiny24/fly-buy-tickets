@@ -1,6 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
+    background-color: lightblue;
 }
 
 .App {
@@ -19,7 +20,7 @@ body {
 }
 
 .background1 {
-    background-image: url('/public/images/background.png');
+    /* background-image: url('/public/images/background.png'); */
     padding-left: 30px;
 }
 
@@ -27,11 +28,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/images/background2.png');
+    /* background-image: url('/public/images/background2.png'); */
 }
 
 .background3 {
-    background-image: url('/public/images/background3.png');
+    /* background-image: url('/public/images/background3.png'); */
     padding-top: 30px;
 }
 
@@ -39,6 +40,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/public/images/background4.png');
+    /* background-image: url('/public/images/background4.png'); */
     padding: 20px 80px;
 }

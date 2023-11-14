@@ -26,7 +26,7 @@ const Places = () => {
         window.scrollTo(0, 0);
       }, []); 
 
-      const [price, setPrice] = useState(200); // Початкова ціна
+      const [price, setPrice] = useState(0); // Початкова ціна
       const [previous, setPrevious] = useState('7kg');
 
       const handleBaggageChange = (selectedPrice, element) => {
@@ -100,7 +100,7 @@ const Places = () => {
                                 src="/fly-buy-tickets/images/schema/7kg.png"
                                 alt="7 кг багажу"
                                 id="7kg"
-                                onClick={() => handleBaggageChange(200, '7kg')}
+                                onClick={() => handleBaggageChange(0, '7kg')}
                                 className='selected-baggage'
                             />
                             
@@ -108,14 +108,14 @@ const Places = () => {
                                 src="/fly-buy-tickets/images/schema/20kg.png"
                                 alt="20 кг багажу"
                                 id="20kg"
-                                onClick={() => handleBaggageChange(300, '20kg')}
+                                onClick={() => handleBaggageChange(150, '20kg')}
                             />
                             
                             <img
                                 src="/fly-buy-tickets/images/schema/32kg.png"
                                 alt="32 кг багажу"
                                 id="32kg"
-                                onClick={() => handleBaggageChange(400, '32kg')}
+                                onClick={() => handleBaggageChange(250, '32kg')}
                             />
 
                             <p>до 7 кг</p>

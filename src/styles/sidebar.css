@@ -10,6 +10,7 @@
     transition: width 0.5s;
     overflow: hidden;
     border-radius: 0 25px 25px 0;
+    z-index: 2;
 }
 
 .logo-container {

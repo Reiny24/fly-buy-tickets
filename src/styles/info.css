@@ -3,7 +3,7 @@
     margin: 10px;
     border-radius: 30px 30px 30px 30px;
     padding: 120px 20px 20px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 }
 
 .info-box {
@@ -11,11 +11,9 @@
     grid-template-rows: 70px 4fr;
     grid-template-columns: 80px 5fr;
     background-color: rgba(235, 139, 109, 0.9);
-    min-width: 370px;
     min-height: 200px;
-    max-height: 320px;
-    margin: 3px;
-    padding: 30px;
+    margin: 20px 0;
+    padding: 30px 25px;
     justify-self: center;
     border-radius: 35px;
 }
@@ -36,7 +34,8 @@
 
 .info-text {
     grid-column: 1 / 3;
-    font-size: 27px;
+    font-size: 35px;
+    line-height: 1.4;
     /* text-align: justify; */
     align-self: center;
 }

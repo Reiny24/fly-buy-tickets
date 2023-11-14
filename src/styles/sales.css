@@ -1,19 +1,19 @@
 .sales {
-    margin: 20px;
+    margin: 20px 20px 20px 40px;
     padding: 20px;
 }
 
 .sales-title {
-    color: white;
-    font-size: 40px;
+    color: black;
+    font-size: 60px;
     font-weight: bold;
     align-self: end;
     text-align: end;
 }
 
 .sales-box {
-    background-color: gray;
-    margin: 5px;
+    background-color: rgba(133, 133, 133, 0.7);
+    margin: 40px 0;
     border-radius: 35px;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -22,14 +22,15 @@
 
 .sales-box h1 {
     grid-column: span 2;
-    padding: 30px 0 0 20px;
+    padding-top: 30px;
     margin: 0;
+    font-size: 40px;
 }
 
 .sales-box hr {
     grid-column: span 2;
     border: none;
-    border-top: 1px solid white; 
+    border: 5px solid white; 
     margin: 10px 0;
     width: 100%;
 }
@@ -48,5 +49,5 @@
     margin: 0;
     padding: 10px 25px;
     text-align: justify;
-    font-size: 27px;
+    font-size: 30px;
 }
