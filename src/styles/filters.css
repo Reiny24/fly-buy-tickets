@@ -2,6 +2,7 @@
     display: grid;
     margin: 70px;
     background-color: rgba(133, 133, 133, 0.7);
+    border: solid 10px white;
     border-radius: 35px;
     padding: 80px 20px 20px 20px;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -47,16 +48,6 @@
     cursor: pointer;
 }
 
-@media (max-width: 1200px) {
-    .filters-title {
-        grid-column: auto;
-    }
-
-    .compare-button {
-        grid-column: auto;
-    }
-}
-
 .filters-box {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -66,6 +57,7 @@
     margin: 3px;
     padding: 20px;
     justify-self: center;
+    align-items: center;
 }
 
 .filters-box h2 {
@@ -74,9 +66,13 @@
 }
 
 .filters-input {
-    border: none;
+    border-color: black;
     font-size: 20px;
     text-align: end;
+    justify-self: end;
+    background: white;
+    height: 50px;
+    width: 230px;
 }
 
 .filters-direction {
@@ -113,4 +109,46 @@
 
 .filters-box6 {
     border-radius: 0 0 25px 0;
+}
+
+.travelers {
+    display: grid;
+    grid-template-columns: 2fr 50px 1fr 50px;
+    align-items: center;
+    justify-items: center;
+    justify-self: end;
+    gap: 10px;
+    font-size: 20px;
+    max-height: 70px;
+}
+
+.travelers p {
+    margin: 0;
+    justify-self: end;
+}
+
+.travelers button {
+    width: 50px;
+    height: 35px;
+    font-size: 30px;
+    border-radius: 18px;
+    align-items: start;
+}
+
+option {
+    margin: 20px;
+}
+
+@media (max-width: 1200px) {
+    .filters-title {
+        grid-column: auto;
+    }
+
+    .compare-button {
+        grid-column: auto;
+    }
+
+    .filters-input {
+        width: 400px;
+    }
 }

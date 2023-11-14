@@ -30,4 +30,28 @@
     width: 300px;
     font-size: 35px;
     padding: 20px;
+    text-align: center;
+}
+
+.login-page img {
+    width: 80px;
+}
+
+.login-page button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.password {
+    margin-left: 118px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.registration {
+    display: grid;
 }

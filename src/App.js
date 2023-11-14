@@ -24,6 +24,11 @@ function App() {
                     <div className='main background1'>
                         <Filters></Filters>
                         <Info></Info>
+                    </div>
+                </Route>
+
+                <Route exact path='/sales'>
+                    <div className="main background2">
                         <Sales></Sales>
                     </div>
                 </Route>

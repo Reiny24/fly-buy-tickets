@@ -3,12 +3,12 @@ import './styles/sales.css'
 const Sales = () => {
     return ( 
         <div className="sales" id="sales">
-            <p className="sales-title">Акції та знижки</p>
+            <h1 className="sales-title">Акції та знижки</h1>
 
             <div className="sales-box">
-                <img src="/fly-buy-tickets/images/sales/family.png" alt="Сім'я, подорожуйте дешевше з сім'єю" />
-                <p className="sales-sub-title">Родинний тур</p>
+                <h1>Родинний тур</h1>
                 <hr />
+                <img src="/fly-buy-tickets/images/sales/family.png" alt="Сім'я, подорожуйте дешевше з сім'єю" />
                 <p>
                     Економте подорожуючи сім’єю разом з нами. Кожна дитина віком до 8-ми років, 
                     яка подорожує з дорослим, може летіти за половину ціни. Знижка автоматично 
@@ -17,9 +17,9 @@ const Sales = () => {
             </div>
 
             <div className="sales-box">
-                <img src="/fly-buy-tickets/images/sales/leaves.png" alt="Осінь, осінні розпродажі" />
-                <p className="sales-sub-title">Осінні розпродажі</p>
+                <h1>Осінні розпродажі</h1>
                 <hr />
+                <img src="/fly-buy-tickets/images/sales/leaves.png" alt="Осінь, осінні розпродажі" />
                 <p>
                     Всі клієнти сайту отримують унікальний промокод для знижки на авіаквитки під 
                     час бронювання. Промокод може надає знижку 15% на всі рейси протягом осіннього 
@@ -29,9 +29,9 @@ const Sales = () => {
             </div>
 
             <div className="sales-box">
-                <img src="/fly-buy-tickets/images/sales/handshake.png" alt="Співпраця" />
-                <p className="sales-sub-title">Зареєструйтеся і зекономте</p>
+                <h1>Зареєструйтеся і зекономте</h1>
                 <hr />
+                <img src="/fly-buy-tickets/images/sales/handshake.png" alt="Співпраця" />
                 <p>
                     Спеціальна акція для зареєстрованих клієнтів сайту, які мають акаунт. Всі зареєстровані 
                     користувачі отримують сталу знижку в розмірі 10% на всі авіаквитки після входу в систему 

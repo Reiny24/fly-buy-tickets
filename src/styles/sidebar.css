@@ -5,6 +5,7 @@
     background-color: #d9d9d9;
     font-weight: 700;
     display: flex;
+    align-content: center;
     flex-direction: column;
     transition: width 0.5s;
     overflow: hidden;
@@ -22,7 +23,7 @@
     margin: 0;
     display: none;
     white-space: nowrap;
-    font-size: 28px;
+    font-size: 34px;
     color: black;
     padding-left: 10px;
 }
@@ -36,7 +37,7 @@
 }
 
 .icon {
-    padding: 30px 30px;
+    padding: 0px 30px;
 }
 
 .sidebar hr {
@@ -47,12 +48,12 @@
 
 .sidebar a {
     text-decoration: none;
-    color: inherit;
 }
 
-.sidebar .item {
+.item {
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
+    
 }

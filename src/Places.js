@@ -25,6 +25,17 @@ const Places = () => {
       useEffect(() => {
         window.scrollTo(0, 0);
       }, []); 
+
+      const [price, setPrice] = useState(200); // Початкова ціна
+      const [previous, setPrevious] = useState('7kg');
+
+      const handleBaggageChange = (selectedPrice, element) => {
+          setPrice(selectedPrice);
+          setPrevious(element);
+        
+          if (previous) document.getElementById(previous).classList.remove('selected-baggage');
+          document.getElementById(element).classList.add('selected-baggage');
+      };
       
     return ( 
         <div className="places">
@@ -83,25 +94,42 @@ const Places = () => {
                     </div>
 
                     <div className="baggage-info">
-                        <h2>Інформація про багаж</h2>
-                        
-                        <img src="/fly-buy-tickets/images/schema/7kg.png" alt="7 кг багажу" />
-                        
-                        <img src="/fly-buy-tickets/images/schema/20kg.png" alt="20 кг багажу" />
-                        
-                        <img src="/fly-buy-tickets/images/schema/32kg.png" alt="32 кг багажу" />
-                        <p>7 кг</p>
-                        <p>20 кг</p>
-                        <p>32 кг</p>
+                            <h2>Інформація про багаж</h2>
+                            
+                            <img
+                                src="/fly-buy-tickets/images/schema/7kg.png"
+                                alt="7 кг багажу"
+                                id="7kg"
+                                onClick={() => handleBaggageChange(200, '7kg')}
+                                className='selected-baggage'
+                            />
+                            
+                            <img
+                                src="/fly-buy-tickets/images/schema/20kg.png"
+                                alt="20 кг багажу"
+                                id="20kg"
+                                onClick={() => handleBaggageChange(300, '20kg')}
+                            />
+                            
+                            <img
+                                src="/fly-buy-tickets/images/schema/32kg.png"
+                                alt="32 кг багажу"
+                                id="32kg"
+                                onClick={() => handleBaggageChange(400, '32kg')}
+                            />
 
-                        <p className='baggage-price'>200 грн (UAH)</p>
-                    </div>
+                            <p>до 7 кг</p>
+                            <p>до 20 кг</p>
+                            <p>до 32 кг</p>
+
+                            <p className='baggage-price'>{price} грн (UAH)</p>
+                        </div>
                 </div>
 
                 <div className="cart-box">
                     <img src="/fly-buy-tickets/images/schema/cart.png" alt="Кошик" />
                     <p>Кошик: <br />0 грн</p>
-                    <p>Ціна: 800 грн (UAH)</p>
+                    <p>Ціна: {flightData.price + price} грн (UAH)</p>
                     <Link to='/pay' className="add-to-cart"><h2>Додати в<br />кошик</h2></Link>
                 </div>
             </div>

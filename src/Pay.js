@@ -15,55 +15,69 @@ const Pay = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []); 
+    }, []); 
+
+    const handleDelete = (id) => {
+        const newFlights = flights.filter(flight => flight.id !== id);
+        setFlight(newFlights);
+        console.log(flights.length)
+    };
 
     return ( 
         <div className="pay">
             <h1>Оплата квитків</h1>
 
-            {flights.map((flight) => (
-                <div className='tickets-list' key={flight.id}>
-                    <h2>Рейс:</h2>
-                    <h2> {flight.title}</h2>
+            {flights.length !== 0 && <div className='pay-case1'>
+                {flights.map((flight) => (
+                    <div className='tickets-list' key={flight.id}>
+                        <h2>Рейс:</h2>
+                        <h2> {flight.title}</h2>
+                        
+                        <h2>Час:</h2>
+                        <h2>{flight.time}</h2>
+                        
+                        <h2>Місце:</h2>
+                        <h2>{flight.place}</h2>
+                        
+                        <h2>Ціна:</h2>
+                        <h2>{flight.price} грн</h2>
+
+                        <button onClick={() => handleDelete(flight.id)}>
+                            <img src="/fly-buy-tickets/images/pay/trash.png" alt="Видалити квиток" />
+                        </button>
+                    </div>
+                ))}
+
+                <div className='pay-data'>
+                    <h2>Дані оплати:</h2>
+                    <div className='pay-info'>
+                        <p>Божик Назар Володимирович</p>
+                        <p>+380930029114</p>
+                        <img src="/fly-buy-tickets/images/filters/Arrows.png" alt="Змінити дані" />
+                        <Link className='change-method'>Змінити дані</Link>
+                    </div>
+
+                    <h2>Метод оплати:</h2>
+                    <div className='pay-method'>
+                        <input type="radio" />
+                        <img src="/fly-buy-tickets/images/pay/mastercard-visa.png" alt="MasterCard Visa" />
+                        <input type="radio" />
+                        <img src="/fly-buy-tickets/images/pay/g-apple-pay.png" alt="G-Pay Apple-Pay" />
+                    </div>
+
+                    <div className='confirmation'>
+                        <input type="checkbox" />
+                        <p>Надаю дозвіл на обробку моїх даних</p>
+                    </div>
                     
-                    <h2>Час:</h2>
-                    <h2>{flight.time}</h2>
-                    
-                    <h2>Місце:</h2>
-                    <h2>{flight.place}</h2>
-                    
-                    <h2>Ціна:</h2>
-                    <h2>{flight.price} грн</h2>
-
-                    <img src="/fly-buy-tickets/images/pay/trash.png" alt="Видалити квиток" />
+                    <Link to='/fly-buy-tickets' className='pay-button'><p>Оплатити</p></Link>
                 </div>
-            ))}
+            </div>}
 
-            <div className='pay-data'>
-                <h2>Дані оплати:</h2>
-                <div className='pay-info'>
-                    <p>Божик Назар Володимирович</p>
-                    <p>+380930029114</p>
-                    <img src="/fly-buy-tickets/images/filters/Arrows.png" alt="Змінити дані" />
-                    <Link className='change-method'>Змінити дані</Link>
-                </div>
-
-                <h2>Метод оплати:</h2>
-                <div className='pay-method'>
-                    <input type="radio" />
-                    <img src="/fly-buy-tickets/images/pay/mastercard-visa.png" alt="MasterCard Visa" />
-                    <input type="radio" />
-                    <img src="/fly-buy-tickets/images/pay/g-apple-pay.png" alt="G-Pay Apple-Pay" />
-                </div>
-
-                <div className='confirmation'>
-                    <input type="checkbox" />
-                    <p>Надаю дозвіл на обробку моїх даних</p>
-                </div>
-                
-                <Link to='/fly-buy-tickets' className='pay-button'><p>Оплатити</p></Link>
-            </div>
-
+            {flights.length === 0 && <div className='pay-case2'>
+                <h2>Ваший список квитків порожній</h2>
+                <Link to='/fly-buy-tickets' className='pay-button'><p>Назад на головну</p></Link>
+            </div>}
 
         </div>
      );

@@ -2,7 +2,7 @@
     display: grid;
     margin: 10px;
     border-radius: 30px 30px 30px 30px;
-    padding: 80px 20px 20px 20px;
+    padding: 120px 20px 20px 20px;
     grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
 }
 
@@ -13,7 +13,7 @@
     background-color: rgba(235, 139, 109, 0.9);
     min-width: 370px;
     min-height: 200px;
-    max-height: 250px;
+    max-height: 320px;
     margin: 3px;
     padding: 30px;
     justify-self: center;
@@ -25,7 +25,7 @@
 }
 
 .info-title {
-    font-size: 26px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
     margin: 0;
@@ -36,6 +36,7 @@
 
 .info-text {
     grid-column: 1 / 3;
-    font-size: 22px;
-    text-align: justify;
+    font-size: 27px;
+    /* text-align: justify; */
+    align-self: center;
 }
