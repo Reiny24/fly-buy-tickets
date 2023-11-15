@@ -12,7 +12,7 @@
     grid-template-columns: 80px 5fr;
     background-color: rgba(235, 139, 109, 0.9);
     min-height: 200px;
-    margin: 20px 0;
+    margin: 20px 5px;
     padding: 30px 25px;
     justify-self: center;
     border-radius: 35px;
